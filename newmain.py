@@ -24,7 +24,7 @@ class MyWindow(QMainWindow):
 
     def callback_function(self, data):
         # Handle incoming messages from ROS topic
-        self.label.setText(data.data)
+        self.label_35.setText(data.data)
 
     def publish_function(self):
         # Handle button click event and publish message to ROS topic

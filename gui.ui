@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1440</width>
-    <height>1084</height>
+    <height>791</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -382,38 +382,6 @@
               </widget>
              </item>
              <item>
-              <widget class="QFrame" name="frame_24">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QFrame" name="frame_23">
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="frame_14">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_8">
-             <item>
               <widget class="QFrame" name="frame_11">
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -421,17 +389,7 @@
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_6">
-                <item>
-                 <widget class="QLabel" name="label_19">
-                  <property name="text">
-                   <string>Temp</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLCDNumber" name="batteryTemp_lcd"/>
-                </item>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
                 <item>
                  <widget class="QLabel" name="label_18">
                   <property name="text">
@@ -441,6 +399,16 @@
                 </item>
                 <item>
                  <widget class="QLCDNumber" name="batteryCapacity_lcd"/>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_19">
+                  <property name="text">
+                   <string>Temp</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLCDNumber" name="batteryTemp_lcd"/>
                 </item>
                </layout>
               </widget>
@@ -453,7 +421,7 @@
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
                </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <layout class="QVBoxLayout" name="verticalLayout_2">
                 <item>
                  <widget class="QLabel" name="label_20">
                   <property name="font">
@@ -467,22 +435,22 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="pushButton">
-                  <property name="enabled">
-                   <bool>false</bool>
-                  </property>
-                  <property name="text">
-                   <string>On</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
                  <widget class="QPushButton" name="pushButton_2">
                   <property name="enabled">
                    <bool>false</bool>
                   </property>
                   <property name="text">
                    <string>Off</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>On</string>
                   </property>
                  </widget>
                 </item>
@@ -525,9 +493,6 @@
                 <layout class="QVBoxLayout" name="verticalLayout_9">
                  <item>
                   <widget class="QGraphicsView" name="armGraphic1"/>
-                 </item>
-                 <item>
-                  <widget class="QGraphicsView" name="armGraphic2"/>
                  </item>
                  <item>
                   <widget class="QFrame" name="frame_22">
@@ -752,22 +717,46 @@
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_6">
                     <item>
-                     <widget class="QTextBrowser" name="textBrowser"/>
+                     <widget class="QLabel" name="label_35">
+                      <property name="text">
+                       <string>S1_state</string>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="QTextBrowser" name="textBrowser_2"/>
+                     <widget class="QLabel" name="label_37">
+                      <property name="text">
+                       <string>S2_state</string>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="QTextBrowser" name="textBrowser_3"/>
+                     <widget class="QLabel" name="label_38">
+                      <property name="text">
+                       <string>S3_state</string>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="QTextBrowser" name="textBrowser_4"/>
+                     <widget class="QLabel" name="label_39">
+                      <property name="text">
+                       <string>S4_state</string>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="QTextBrowser" name="textBrowser_5"/>
+                     <widget class="QLabel" name="label_36">
+                      <property name="text">
+                       <string>S5_state</string>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="QTextBrowser" name="textBrowser_6"/>
+                     <widget class="QLabel" name="label_34">
+                      <property name="text">
+                       <string>S6_state</string>
+                      </property>
+                     </widget>
                     </item>
                    </layout>
                   </widget>
