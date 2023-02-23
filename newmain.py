@@ -1,9 +1,12 @@
 import rospy
 from std_msgs.msg import String
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
+import yuz
 
-class MyGui(QMainWindow):
-    def __init2__(self):
+
+class MyWindow(QMainWindow):
+    def __init__(self):
         super().__init__()
 
         # Initialize ROS node
@@ -15,15 +18,7 @@ class MyGui(QMainWindow):
         # Create ROS publisher
         self.pub = rospy.Publisher('my_topic_name', String, queue_size=10)
 
-        # Set up GUI widgets
-        self.label = QLabel('Hello, ROS!', self)
-        self.label.move(50, 50)
-        self.button = QPushButton('Publish', self)
-        self.button.move(50, 100)
-        self.button.clicked.connect(self.publish_function)
-
-        # Show the GUI window
-        self.setGeometry(100, 100, 200, 150)
+        uic.loadUi('gui.ui', self)
         self.show()
 
     def callback_function(self, data):
@@ -38,5 +33,6 @@ class MyGui(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication([])
-    gui = MyGui()
+    window = MyWindow()
+    app.exec_()
     rospy.spin()
