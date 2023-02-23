@@ -19,6 +19,7 @@ class MyWindow(QMainWindow):
         self.pub = rospy.Publisher('my_topic_name', String, queue_size=10)
 
         uic.loadUi('gui.ui', self)
+        self.pushButton_3.clicked.connect(self.publish_function)
         self.show()
 
     def callback_function(self, data):
