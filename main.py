@@ -50,12 +50,12 @@ class MyWindow(QMainWindow):
         self.soilMoisture_lcd.display(100)
         self.npkSensor_lcd.display(100)
 
-        self.s1_label.setText('S1')
-        self.s2_label.setText('S2')
-        self.s3_label.setText('S3')
-        self.s4_label.setText('S4')
-        self.s5_label.setText('S5')
-        self.s6_label.setText('S6')
+        self.s1_label.setText('Flushing')
+        self.s2_label.setText('Capping')
+        self.s3_label.setText('Reagent prep')
+        self.s4_label.setText('Spectroscopy')
+        self.s5_label.setText('Flush')
+        self.s6_label.setText('Calibrating')
 
 
         scene = QtWidgets.QGraphicsScene(self)

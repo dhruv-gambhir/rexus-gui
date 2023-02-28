@@ -578,7 +578,7 @@
                    <string notr="true">background-color:rgb(255, 200, 18);</string>
                   </property>
                   <property name="text">
-                   <string>Cpty</string>
+                   <string>Capacity</string>
                   </property>
                  </widget>
                 </item>
@@ -595,7 +595,7 @@
                    <string notr="true">background-color:rgb(255, 200, 18);</string>
                   </property>
                   <property name="text">
-                   <string>Temp</string>
+                   <string>Temperature</string>
                   </property>
                  </widget>
                 </item>
