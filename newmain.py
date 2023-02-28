@@ -2,7 +2,6 @@ import rospy
 from std_msgs.msg import String
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
-import yuz
 
 
 class MyWindow(QMainWindow):
